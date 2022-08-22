@@ -76,7 +76,7 @@ function players(playerId) {
       const managerFieldString = managerField.value;
 
       if(isNaN(managerFieldString)){
-         alert("Please provide Valid Numbers!");
+         alert("Please provide Valid  Numbers!");
       }
      else{
       const managerCost = parseInt(managerFieldString);
@@ -85,7 +85,12 @@ function players(playerId) {
       //    coach costing
       const coachField = document.getElementById("coach-cost");
       const coachFieldString = coachField.value;
-      const coachCoast = parseInt(coachFieldString);
+
+      if(isNaN(coachFieldString)){
+         alert("Please provide Valid  Numbers!");
+      }
+      else{
+         const coachCoast = parseInt(coachFieldString);
       coachField.value = coachCoast;
       const playerExpense = document.getElementById("player-expense");
       const fiveplayerCost = parseInt(playerExpense.innerText);
@@ -95,6 +100,9 @@ function players(playerId) {
       const totalCoastAmount = document.getElementById("final-amount");
       const totalCoastAmountField = totalCoastAmount.innerText;
       totalCoastAmount.innerText = totalCoast;
+
+      }
+      
      }
     })
      
