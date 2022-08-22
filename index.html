@@ -9,38 +9,46 @@
 
 </head>
 <header>
-
-    <h1 class="text-center mt-5 fw-bolder fst-italic text-white">Make your own selection</h1>
-    <p class="text-center fst-italic fw-bolders text-white">Football is a family of team sports <br>
-         that involve, to varying degrees, <br>
-         kicking a ball to score a goal. Unqualified,<br>
-          the word football normally means the form of football <br>
+    <section>
+        <div class="card text-bg-dark mb-5 text-center ">
+            <img src="images/coverf.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h1 class=" mt-5 fw-bolder fst-italic color1 py-5">Make your own selection</h1>
+    <p class=" fst-italic fw-bolders  color1">Football is a family of team sports 
+         that involve, to varying degrees,<br> 
+         kicking a ball to score a goal. Unqualified,
+          the word football <br> normally means the form of football 
            that is the most popular where the word is used.</p>
+            </div>
+          </div>
+    </section>
+
+    
 </header>
   <body>
 
     <!-- players -->
     <section>
     
-    <div class="mx-2 d-flex cols-12 px-3">
-        <div class="card  bg-dark mx-2  border border-1" >
-            <img src="images/mbappy.jpg" class="card-img-top" alt="...">
+    <div class="mx-2 d-flex cols-12 px-3" >
+        <div class="card  bg-dark mx-2  " style="width: 18rem;" >
+            <img src="images/mbappyf-.jpg" class="card-img-top py-3" alt="...">
             <div class="card-body">
-                <p class="text-white" > <span id="player-name1">Player name: MBappy</span></p>
-                <button type="button" class="btn btn-primary" id="mbappy">select</button>
+                <p class="text-white  mt-5" > <span id="player-name1">Player name: MBappy</span></p>
+                <button type="button" class="btn btn-primary " id="mbappy">select</button>
 
              </div>
           </div>
-        <div class="card  bg-dark mx-2  " >
-            <img src="images/ronaldo.jpg" class="card-img-top  " alt="...">
+        <div class="card  bg-dark mx-2" style="width: 18rem; " >
+            <img src="images/ronaldof.jpg" class="card-img-top  " alt="...">
             <div class="card-body">
                 <p class="text-white"><span id="player-name2"> Player name:Ronaldo</span></p>
                 <button type="button" class="btn btn-primary" id="ronaldo" >select</button>
 
              </div>
           </div>
-        <div class="card  bg-dark mx-2" >
-            <img src="images/messi.jpg" class="card-img-top" alt="...">
+        <div class="card  bg-dark mx-2 " style="width: 18rem;" >
+            <img src="images/messif.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="text-white"><span id="player-name3">Player name:messi</span></p>
                 <button type="button" class="btn btn-primary" id="messi">select</button>
@@ -48,8 +56,8 @@
              </div>
           </div>
           <!-- list -->
-          <div>
-               <h4> Selected -five- players</h4>
+          <div class=" border-round color bg-dark px-5">
+               <h4 class="mt-5" > Selected -five- players</h4>
                <ul id="select-players">
                 <!-- <li><span>player1</span></li>
                <li><span>player2</span></li>
@@ -68,25 +76,25 @@
 <!-- others -->
 <section class="mt-5">
     
-    <div class="mx-2 d-flex cols-12 px-3">
-        <div class="card  bg-dark mx-2" >
-            <img src="images/sala.jpg" class="card-img-top" alt="...">
+    <div class="mx-2 d-flex cols-12">
+        <div class="card  bg-dark mx-2" style="width: 18rem;" >
+            <img src="images/salaf.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="text-white"><span id="player-name4">Player name: Sala</span></p>
                 <button type="button" class="btn btn-primary" id="sala">select</button>
 
              </div>
           </div>
-        <div class="card  bg-dark mx-2" >
-            <img src="images/Banner Image.png" class="card-img-top" alt="...">
+        <div class="card  bg-dark " style="width: 18rem;" >
+            <img src="images/neymar.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="text-white"><span id="player-name5">Player name: romero</span></p>
+                <p class="text-white"><span id="player-name5">Player name:Neymar</span></p>
                 <button type="button" class="btn btn-primary" id="romero">select</button>
 
              </div>
           </div>
-        <div class="card  bg-dark mx-2" >
-            <img src="images/hulk.jpg" class="card-img-top" alt="...">
+        <div class="card  bg-dark mx-2 " style="width: 18rem;" >
+            <img src="images/hulkf.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="text-white"><span id="player-name6">Player name: hulk</span></p>
                 <button type="button" class="btn btn-primary" id="hulk">select</button>
@@ -94,10 +102,10 @@
              </div>
           </div>
           <!-- calculation -->
-          <div class="text-center ">
+          <div class="text-center px-5 bg-info " style="width: 18rem;">
                <h4 class="mb-2"> budget</h4>
-                per player: <input class="mb-2" type="text" name="" id="per-player">
-                <button type="button" class="btn btn-primary mb-2" id="calculation">calculate</button>
+                per player: <input class="mb-2 px-1" type="text" name="" id="per-player">
+                <button type="button" class="btn btn-primary mb-2 " id="calculation">calculate</button>
                 <h3>player Expenses: <span id="player-expense">00</span>tk</h3>
           <br> manager: <input class="mb-2" type="text" name="" id="manager">
           
