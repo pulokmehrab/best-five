@@ -53,12 +53,14 @@ function players(playerId) {
  document.getElementById("calculation").addEventListener("click", function () {
    const playerField = document.getElementById("per-player");
    const playerFieldString = playerField.value;
+   const playerList = document.getElementById("select-players");
+   let count =playerList.childElementCount;
    if (isNaN(playerFieldString)) {
      alert("Please provide Valid Numbers!");
    } else {
      const playercost = parseInt(playerFieldString);
      
-     const fiveplayerCost =5*playercost;
+     const fiveplayerCost =count*playercost;
  
      //    playercost....
  
