@@ -1,38 +1,51 @@
 function players(playerId) {
    const playername = document.getElementById(playerId);
    const playerName = playername.innerText;
+   
    playername.innerText = playerName;
    const playerList = document.getElementById("select-players");
    //  console.log(playerList);
+   
    const li1 = document.createElement("li");
    li1.innerText = playerName;
    if (playerList.childElementCount <= 4) {
+   
      playerList.appendChild(li1);
+     
+     
    } else {
      alert("You can't add more");
    }
+   
  }
  
  document.getElementById("mbappy").addEventListener("click", function () {
    // console.log("mabappy");
    players("player-name1");
 
+   document.getElementById("mbappy").disabled = true;
+
  });
  
  document.getElementById("ronaldo").addEventListener("click", function () {
    players("player-name2");
+   document.getElementById("ronaldo").disabled = true;
  });
  document.getElementById("messi").addEventListener("click", function () {
    players("player-name3");
+   document.getElementById("mbappy").disabled = true;
  });
  document.getElementById("sala").addEventListener("click", function () {
    players("player-name4");
+   document.getElementById("sala").disabled = true;
  });
  document.getElementById("romero").addEventListener("click", function () {
    players("player-name5");
+   document.getElementById("romero").disabled = true;
  });
  document.getElementById("hulk").addEventListener("click", function () {
    players("player-name6");
+   document.getElementById("hulk").disabled = true;
  });
  
  ///////////////////////////////////////////////////////////////////////////////////////////////////////
