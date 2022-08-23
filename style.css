@@ -1,11 +1,12 @@
 body{
 
     background-color: rgb(222, 105, 46);
+    margin: 0px;
 }
 
 footer{
     background-color: black;
-   width: 1200px;
+   width: 1110px;
    height: 200px;
    margin-top: 20px;
 }
