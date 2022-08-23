@@ -33,7 +33,7 @@ function players(playerId) {
  });
  document.getElementById("messi").addEventListener("click", function () {
    players("player-name3");
-   document.getElementById("mbappy").disabled = true;
+   document.getElementById("messi").disabled = true;
  });
  document.getElementById("sala").addEventListener("click", function () {
    players("player-name4");
